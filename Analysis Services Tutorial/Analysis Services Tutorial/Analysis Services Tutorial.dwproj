@@ -6,10 +6,30 @@
     <Name>Analysis Services Tutorial.database</Name>
     <FullPath>Analysis Services Tutorial.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Analysis Services Tutorial.cube</Name>
+      <FullPath>Analysis Services Tutorial.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Analysis Services Tutorial.partitions</Name>
+          <FullPath>Analysis Services Tutorial.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
       <Name>Date.dim</Name>
       <FullPath>Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Product.dim</Name>
+      <FullPath>Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer.dim</Name>
+      <FullPath>Customer.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
