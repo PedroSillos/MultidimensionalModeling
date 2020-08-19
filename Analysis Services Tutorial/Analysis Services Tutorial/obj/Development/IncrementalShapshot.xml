@@ -26,7 +26,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>AqRO2zwod0EuicQOLEYGvNKSvmw=8/19/2020 4:25:56 PM8/18/2020 7:22:42 PM</TimeStamp>
+        <TimeStamp>/NiIwNtRANzCuw60Q7BbhuOPWFo=8/19/2020 5:43:23 PM8/18/2020 7:22:42 PM</TimeStamp>
         <ID>
           <String>Adventure Works DW</String>
         </ID>
@@ -40,7 +40,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>UbhFMNnIM6qYT7s+RxCQJxVW9QQ=8/19/2020 11:09:51 AM8/18/2020 8:34:26 PM</TimeStamp>
+        <TimeStamp>2b2k3bh4dx8f3Smm3nUzv8cF5tw=8/19/2020 8:13:14 PM8/18/2020 8:34:26 PM</TimeStamp>
         <ID>
           <String>Product</String>
         </ID>
@@ -54,7 +54,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>pUerkdYLQ7DCxhzqAANtaczYH/E=8/19/2020 4:17:07 PM8/18/2020 8:34:26 PM8EFKAdRqYNEzrD/K55bPJ+H570g=8/19/2020 11:45:51 AM8/18/2020 8:34:26 PM</TimeStamp>
+        <TimeStamp>/PenRkx5yplhkRf7+dsXyGo1NlM=8/19/2020 7:57:42 PM8/18/2020 8:34:26 PM8EFKAdRqYNEzrD/K55bPJ+H570g=8/19/2020 11:45:51 AM8/18/2020 8:34:26 PM</TimeStamp>
         <ID>
           <String>Analysis Services Tutorial</String>
         </ID>
@@ -71,5 +71,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2020-08-19T20:30:37.386667Z</LastDeployed>
+  <LastDeployed>2020-08-19T23:14:13.233333Z</LastDeployed>
 </DeploymentSnapshot>
