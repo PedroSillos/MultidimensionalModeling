@@ -306,9 +306,6 @@
         <Attribute dwd:design-time-name="b74ce1a5-0ff4-4055-9471-ae5a59e871db">
           <AttributeID>Date Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="56eec909-dde7-42e2-98b5-1d87987e62f0">
-          <AttributeID>Full Date Alternate Key</AttributeID>
-        </Attribute>
         <Attribute dwd:design-time-name="fbdb08a4-0554-45f3-86d1-d8f6af87ce66">
           <AttributeID>English Month Name</AttributeID>
         </Attribute>
@@ -322,6 +319,11 @@
           <AttributeID>Calendar Semester</AttributeID>
         </Attribute>
       </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="f6ca14fc-a899-4a50-b253-88bba8bdd281">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
     </Dimension>
     <Dimension dwd:design-time-name="44475292-de07-452d-afb7-fcf388e301f9">
       <ID>Due Date</ID>
@@ -330,9 +332,6 @@
       <Attributes>
         <Attribute dwd:design-time-name="808f930a-d097-4926-ae6d-f767904d0498">
           <AttributeID>Date Key</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="b3af153b-6512-444b-8912-6d9b59ec6bcd">
-          <AttributeID>Full Date Alternate Key</AttributeID>
         </Attribute>
         <Attribute dwd:design-time-name="73a93816-046c-433a-bc07-a2869d392d83">
           <AttributeID>English Month Name</AttributeID>
@@ -347,6 +346,11 @@
           <AttributeID>Calendar Semester</AttributeID>
         </Attribute>
       </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="bc45b400-3315-45d6-86b6-207c1dfd88f0">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
     </Dimension>
     <Dimension dwd:design-time-name="320bbe53-64f1-480d-a714-723e29bc6e9c">
       <ID>Customer</ID>
@@ -428,9 +432,6 @@
         <Attribute dwd:design-time-name="ed2b6ee5-ce48-4c98-9d6a-52eaba41f277">
           <AttributeID>Date Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="fe39e2ca-cf12-4eba-8983-8660a25a2857">
-          <AttributeID>Full Date Alternate Key</AttributeID>
-        </Attribute>
         <Attribute dwd:design-time-name="16467c5c-932b-493c-bcfe-2702dd1c429e">
           <AttributeID>English Month Name</AttributeID>
         </Attribute>
@@ -444,6 +445,11 @@
           <AttributeID>Calendar Semester</AttributeID>
         </Attribute>
       </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="30415a79-d63f-4dfe-813a-309971c9ca6b">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
     </Dimension>
   </Dimensions>
   <MeasureGroups>

@@ -19,6 +19,32 @@
       <Annotations>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1261" scrolltop="-3151" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7112" y="11303" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4551" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000c711000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_DimDate" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -34,15 +60,15 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>0</Value>
+          <Value>-1261</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>0</Value>
+          <Value>-3151</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>0</Value>
+          <Value>20</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -51,6 +77,45 @@
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
           <Value>100</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+          <Value>
+            <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+              <Shapes NodeWidth="174">
+                <Shape Id="Date Key" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Date Key" />
+                  </Attributes>
+                  <Position x="20" y="20" />
+                </Shape>
+                <Shape Id="English Month Name" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="English Month Name" />
+                  </Attributes>
+                  <Position x="242" y="20" />
+                </Shape>
+                <Shape Id="Calendar Quarter" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Calendar Quarter" />
+                  </Attributes>
+                  <Position x="465" y="20" />
+                </Shape>
+                <Shape Id="Calendar Semester" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Calendar Semester" />
+                  </Attributes>
+                  <Position x="687" y="20" />
+                </Shape>
+                <Shape Id="Calendar Year" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Calendar Year" />
+                  </Attributes>
+                  <Position x="910" y="20" />
+                </Shape>
+              </Shapes>
+            </DiagramLayout>
+          </Value>
         </Annotation>
       </Annotations>
       <LastProcessed>0001-01-01T02:00:00Z</LastProcessed>
@@ -79,45 +144,20 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <DataSize>93</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_DimDate</TableID>
+              <ColumnID>SimpleDate</ColumnID>
+            </Source>
+          </NameColumn>
           <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Full Date Alternate Key</AttributeID>
-              <Name>Full Date Alternate Key</Name>
-            </AttributeRelationship>
             <AttributeRelationship>
               <AttributeID>English Month Name</AttributeID>
               <Name>English Month Name</Name>
             </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Calendar Quarter</AttributeID>
-              <Name>Calendar Quarter</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Calendar Year</AttributeID>
-              <Name>Calendar Year</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Calendar Semester</AttributeID>
-              <Name>Calendar Semester</Name>
-            </AttributeRelationship>
           </AttributeRelationships>
-          <OrderBy>Key</OrderBy>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Full Date Alternate Key</ID>
-          <Name>Full Date Alternate Key</Name>
-          <Type>Date</Type>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Date</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_DimDate</TableID>
-                <ColumnID>FullDateAlternateKey</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -128,6 +168,13 @@
           <Type>Months</Type>
           <KeyColumns>
             <KeyColumn>
+              <DataType>SmallInt</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimDate</TableID>
+                <ColumnID>CalendarYear</ColumnID>
+              </Source>
+            </KeyColumn>
+            <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>10</DataSize>
               <Source xsi:type="ColumnBinding">
@@ -136,6 +183,21 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <DataSize>15</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_DimDate</TableID>
+              <ColumnID>MonthName</ColumnID>
+            </Source>
+          </NameColumn>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Calendar Quarter</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Calendar Quarter</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -146,6 +208,13 @@
           <Type>Quarters</Type>
           <KeyColumns>
             <KeyColumn>
+              <DataType>SmallInt</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimDate</TableID>
+                <ColumnID>CalendarYear</ColumnID>
+              </Source>
+            </KeyColumn>
+            <KeyColumn>
               <DataType>UnsignedTinyInt</DataType>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_DimDate</TableID>
@@ -153,6 +222,21 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <DataSize>10</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_DimDate</TableID>
+              <ColumnID>CalendarQuarterDesc</ColumnID>
+            </Source>
+          </NameColumn>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Calendar Semester</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Calendar Semester</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -180,6 +264,13 @@
           <Type>HalfYears</Type>
           <KeyColumns>
             <KeyColumn>
+              <DataType>SmallInt</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimDate</TableID>
+                <ColumnID>CalendarYear</ColumnID>
+              </Source>
+            </KeyColumn>
+            <KeyColumn>
               <DataType>UnsignedTinyInt</DataType>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_DimDate</TableID>
@@ -187,11 +278,59 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <NameColumn>
+            <DataType>WChar</DataType>
+            <DataSize>10</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_DimDate</TableID>
+              <ColumnID>CalendarSemesterDesc</ColumnID>
+            </Source>
+          </NameColumn>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Calendar Year</AttributeID>
+              <RelationshipType>Rigid</RelationshipType>
+              <Name>Calendar Year</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
       </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <ID>Hierarchy</ID>
+          <Name>Calendar Date</Name>
+          <Levels>
+            <Level>
+              <ID>Calendar Year</ID>
+              <Name>Calendar Year</Name>
+              <SourceAttributeID>Calendar Year</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Calendar Semester</ID>
+              <Name>Calendar Semester</Name>
+              <SourceAttributeID>Calendar Semester</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Calendar Quarter</ID>
+              <Name>Calendar Quarter</Name>
+              <SourceAttributeID>Calendar Quarter</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>English Month Name</ID>
+              <Name>Calendar Month</Name>
+              <SourceAttributeID>English Month Name</SourceAttributeID>
+            </Level>
+            <Level>
+              <ID>Date Key</ID>
+              <Name>Date</Name>
+              <SourceAttributeID>Date Key</SourceAttributeID>
+            </Level>
+          </Levels>
+        </Hierarchy>
+      </Hierarchies>
       <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
     </Dimension>
     <Dimension>
@@ -1686,9 +1825,6 @@
               <AttributeID>Date Key</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Full Date Alternate Key</AttributeID>
-            </Attribute>
-            <Attribute>
               <AttributeID>English Month Name</AttributeID>
             </Attribute>
             <Attribute>
@@ -1701,6 +1837,11 @@
               <AttributeID>Calendar Semester</AttributeID>
             </Attribute>
           </Attributes>
+          <Hierarchies>
+            <Hierarchy>
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
         </Dimension>
         <Dimension>
           <ID>Due Date</ID>
@@ -1711,9 +1852,6 @@
               <AttributeID>Date Key</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Full Date Alternate Key</AttributeID>
-            </Attribute>
-            <Attribute>
               <AttributeID>English Month Name</AttributeID>
             </Attribute>
             <Attribute>
@@ -1726,6 +1864,11 @@
               <AttributeID>Calendar Semester</AttributeID>
             </Attribute>
           </Attributes>
+          <Hierarchies>
+            <Hierarchy>
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
         </Dimension>
         <Dimension>
           <ID>Customer</ID>
@@ -1808,9 +1951,6 @@
               <AttributeID>Date Key</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Full Date Alternate Key</AttributeID>
-            </Attribute>
-            <Attribute>
               <AttributeID>English Month Name</AttributeID>
             </Attribute>
             <Attribute>
@@ -1823,6 +1963,11 @@
               <AttributeID>Calendar Semester</AttributeID>
             </Attribute>
           </Attributes>
+          <Hierarchies>
+            <Hierarchy>
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
         </Dimension>
       </Dimensions>
       <MeasureGroups>
@@ -2130,7 +2275,7 @@
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1845" scrolltop="-3626" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18542" y="12594" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1845" scrolltop="-3626" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18627" y="12594" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
                       </font>
@@ -2317,7 +2462,7 @@
                       </connector>
                     </ddscontrol>
                   </dds>
-                </DiagramLayout>
+</DiagramLayout>
                 <ShowRelationshipNames>False</ShowRelationshipNames>
                 <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
                 <DiagramViewPortLeft>1845</DiagramViewPortLeft>
@@ -2556,6 +2701,34 @@
                       <xs:element name="FiscalQuarter" msprop:design-time-name="b158e041-e8bc-463e-b0bf-af4d2883267b" msprop:DbColumnName="FiscalQuarter" msprop:FriendlyName="FiscalQuarter" type="xs:unsignedByte" />
                       <xs:element name="FiscalYear" msprop:design-time-name="5ae990dc-686c-4bfd-8abc-8a0474811e57" msprop:DbColumnName="FiscalYear" msprop:FriendlyName="FiscalYear" type="xs:short" />
                       <xs:element name="FiscalSemester" msprop:design-time-name="4f9f7ddd-d624-4eff-8451-859dca121206" msprop:DbColumnName="FiscalSemester" msprop:FriendlyName="FiscalSemester" type="xs:unsignedByte" />
+                      <xs:element name="SimpleDate" msdata:ReadOnly="true" msprop:design-time-name="90ffff38-e9e6-458c-91c0-10b7f74d8367" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="SimpleDate" msprop:ComputedColumnExpression="DATENAME(mm, FullDateAlternateKey) + ' ' +  &#xD;&#xA;DATENAME(dd, FullDateAlternateKey) + ', ' +  &#xD;&#xA;DATENAME(yy, FullDateAlternateKey)" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="93" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="MonthName" msdata:ReadOnly="true" msprop:design-time-name="669fb2ea-eb1d-4790-bdad-54cd116694c4" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="MonthName" msprop:ComputedColumnExpression="EnglishMonthName+' '+ CONVERT(CHAR (4), CalendarYear)" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CalendarQuarterDesc" msdata:ReadOnly="true" msprop:design-time-name="fac1c9b6-d5bf-4fc6-8c4e-b24d018052a1" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="CalendarQuarterDesc" msprop:ComputedColumnExpression="'Q' + CONVERT(CHAR (1), CalendarQuarter) +' '+ 'CY ' +  &#xD;&#xA;CONVERT(CHAR (4), CalendarYear)" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="10" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CalendarSemesterDesc" msdata:ReadOnly="true" msprop:design-time-name="5a892920-b240-4900-b112-9211e7a30238" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="CalendarSemesterDesc" msprop:ComputedColumnExpression="CASE  &#xD;&#xA;WHEN CalendarSemester = 1 THEN 'H1' + ' ' + 'CY' + ' '   &#xD;&#xA;       + CONVERT(CHAR(4), CalendarYear)  &#xD;&#xA;ELSE  &#xD;&#xA;'H2' + ' ' + 'CY' + ' ' + CONVERT(CHAR(4), CalendarYear)  &#xD;&#xA;END" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="10" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>

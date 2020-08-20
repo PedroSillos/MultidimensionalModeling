@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e2c50014-a460-41a1-8196-2a6ec82b53b7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="634e8248-df16-4ea6-9879-d1cecf0a0930" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Adventure Works DW</ID>
   <Name>Adventure Works DW</Name>
   <CreatedTimestamp>0001-01-01T02:00:00Z</CreatedTimestamp>
@@ -27,7 +27,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1845" scrolltop="-3626" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18542" y="12594" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1845" scrolltop="-3626" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18627" y="12594" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
                   </font>
@@ -453,6 +453,34 @@
                   <xs:element name="FiscalQuarter" msprop:design-time-name="b158e041-e8bc-463e-b0bf-af4d2883267b" msprop:DbColumnName="FiscalQuarter" msprop:FriendlyName="FiscalQuarter" type="xs:unsignedByte" />
                   <xs:element name="FiscalYear" msprop:design-time-name="5ae990dc-686c-4bfd-8abc-8a0474811e57" msprop:DbColumnName="FiscalYear" msprop:FriendlyName="FiscalYear" type="xs:short" />
                   <xs:element name="FiscalSemester" msprop:design-time-name="4f9f7ddd-d624-4eff-8451-859dca121206" msprop:DbColumnName="FiscalSemester" msprop:FriendlyName="FiscalSemester" type="xs:unsignedByte" />
+                  <xs:element name="SimpleDate" msdata:ReadOnly="true" msprop:design-time-name="90ffff38-e9e6-458c-91c0-10b7f74d8367" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="SimpleDate" msprop:ComputedColumnExpression="DATENAME(mm, FullDateAlternateKey) + ' ' +  &#xD;&#xA;DATENAME(dd, FullDateAlternateKey) + ', ' +  &#xD;&#xA;DATENAME(yy, FullDateAlternateKey)" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="93" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthName" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="EnglishMonthName+' '+ CONVERT(CHAR (4), CalendarYear)" msprop:IsLogical="True" msprop:design-time-name="669fb2ea-eb1d-4790-bdad-54cd116694c4" msprop:DbColumnName="MonthName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarQuarterDesc" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="'Q' + CONVERT(CHAR (1), CalendarQuarter) +' '+ 'CY ' +  &#xD;&#xA;CONVERT(CHAR (4), CalendarYear)" msprop:IsLogical="True" msprop:design-time-name="fac1c9b6-d5bf-4fc6-8c4e-b24d018052a1" msprop:DbColumnName="CalendarQuarterDesc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarSemesterDesc" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="CASE  &#xD;&#xA;WHEN CalendarSemester = 1 THEN 'H1' + ' ' + 'CY' + ' '   &#xD;&#xA;       + CONVERT(CHAR(4), CalendarYear)  &#xD;&#xA;ELSE  &#xD;&#xA;'H2' + ' ' + 'CY' + ' ' + CONVERT(CHAR(4), CalendarYear)  &#xD;&#xA;END" msprop:IsLogical="True" msprop:design-time-name="5a892920-b240-4900-b112-9211e7a30238" msprop:DbColumnName="CalendarSemesterDesc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -704,7 +732,7 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="ProductLineName" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="CASE ProductLine  &#xD;&#xA;   WHEN 'M' THEN 'Mountain'  &#xD;&#xA;   WHEN 'R' THEN 'Road'  &#xD;&#xA;   WHEN 'S' THEN 'Accessory'  &#xD;&#xA;   WHEN 'T' THEN 'Touring'  &#xD;&#xA;   ELSE 'Components'  &#xD;&#xA;END" msprop:IsLogical="True" msprop:design-time-name="54b16592-79d1-4df9-b4a4-87561c078464" msprop:DbColumnName="ProductLineName">
+                  <xs:element name="ProductLineName" msdata:ReadOnly="true" msprop:design-time-name="54b16592-79d1-4df9-b4a4-87561c078464" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="ProductLineName" msprop:ComputedColumnExpression="CASE ProductLine  &#xD;&#xA;   WHEN 'M' THEN 'Mountain'  &#xD;&#xA;   WHEN 'R' THEN 'Road'  &#xD;&#xA;   WHEN 'S' THEN 'Accessory'  &#xD;&#xA;   WHEN 'T' THEN 'Touring'  &#xD;&#xA;   ELSE 'Components'  &#xD;&#xA;END">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="10" />
@@ -787,25 +815,25 @@
           <xs:field xpath="SalesOrderNumber" />
           <xs:field xpath="SalesOrderLineNumber" />
         </xs:unique>
-        <xs:keyref name="FK_FactInternetSales_DimProduct" refer="dbo_DimProduct_Constraint1">
+        <xs:keyref name="FK_FactInternetSales_DimDate" refer="dbo_DimDate_Constraint1">
           <xs:selector xpath=".//dbo_FactInternetSales" />
-          <xs:field xpath="ProductKey" />
-        </xs:keyref>
-        <xs:keyref name="FK_FactInternetSales_DimDate2" refer="dbo_DimDate_Constraint1">
-          <xs:selector xpath=".//dbo_FactInternetSales" />
-          <xs:field xpath="ShipDateKey" />
-        </xs:keyref>
-        <xs:keyref name="FK_FactInternetSales_DimDate1" refer="dbo_DimDate_Constraint1">
-          <xs:selector xpath=".//dbo_FactInternetSales" />
-          <xs:field xpath="DueDateKey" />
+          <xs:field xpath="OrderDateKey" />
         </xs:keyref>
         <xs:keyref name="FK_FactInternetSales_DimCustomer" refer="Constraint1">
           <xs:selector xpath=".//dbo_FactInternetSales" />
           <xs:field xpath="CustomerKey" />
         </xs:keyref>
-        <xs:keyref name="FK_FactInternetSales_DimDate" refer="dbo_DimDate_Constraint1">
+        <xs:keyref name="FK_FactInternetSales_DimDate1" refer="dbo_DimDate_Constraint1">
           <xs:selector xpath=".//dbo_FactInternetSales" />
-          <xs:field xpath="OrderDateKey" />
+          <xs:field xpath="DueDateKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactInternetSales_DimDate2" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactInternetSales" />
+          <xs:field xpath="ShipDateKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactInternetSales_DimProduct" refer="dbo_DimProduct_Constraint1">
+          <xs:selector xpath=".//dbo_FactInternetSales" />
+          <xs:field xpath="ProductKey" />
         </xs:keyref>
         <xs:keyref name="FK_DimCustomer_DimGeography" refer="dbo_DimGeography_Constraint1">
           <xs:selector xpath=".//dbo_DimCustomer" />
